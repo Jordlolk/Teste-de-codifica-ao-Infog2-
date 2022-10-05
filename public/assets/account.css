@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    min-width: 320px;
+    max-width: 1313px;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    height: 336px;
+}
+
+.main{
+    width: 320px;
+}
+.client{
+    display: flex;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    height: 56px;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+.client a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.new-count{
+    display: flex;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    align-self: stretch;
+    background-color: transparent;
+    height: 56px;
+    align-items: center;
+    flex-direction: column;
+}
+.new-count a{
+    text-decoration: none;
+    color: #FFFFFF;
+}

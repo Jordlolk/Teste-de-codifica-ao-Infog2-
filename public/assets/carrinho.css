@@ -1,0 +1,140 @@
+#notification::after{
+     content: "alou";
+     color:  black;
+     background-color: red;
+}
+.container{
+    max-width: 1200px;
+    min-width: 320px;
+}
+.header{
+    margin-top: 2rem;
+}
+.main{
+    min-width: 320px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.dados{
+   
+    height: 132px;
+    width: 352px;
+    color: rgba(0, 0, 255, 0.671);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.img{
+    width: 80px;
+    height: 80px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price img{
+    margin-left: 11rem;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+}
+.divider{
+    border: 3px solid rgba(143, 143, 143, 0.849);
+    width: 352px;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data{
+    display: flex;
+    justify-content: center;
+}
+.buy-details{
+    width: 360px;
+   background-color: rgb(96, 96, 170);
+}
+.details{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.last-details{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+}
+.buttom{
+    width: 20rem;
+    background-color: rgb(241, 0, 0);
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
+}
+.navegator{
+    background-color: white;
+    margin-bottom: -10px;
+}
+.buttom-navegator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+} 
+.buttom-navegator a{
+    margin: auto;
+    text-decoration: none;
+    border-left: 2px solid rebeccapurple;
+    border-right: 2px solid rebeccapurple;
+    color: rebeccapurple;
+    font-size: 23px;
+}
+.line-navegator{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.line-navegator_2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.line-navegator img{
+    width: 19px;
+    height: 20px;
+}
+.line-navegator_2::before{
+    position: absolute;
+    border: 5px red solid;
+    border-radius: 30px;
+    margin-left: 2.1rem;
+    margin-top: -17px;
+    content: "1";
+    color: white;
+    background-color: red;
+}

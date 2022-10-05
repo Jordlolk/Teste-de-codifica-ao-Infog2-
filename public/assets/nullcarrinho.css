@@ -1,0 +1,56 @@
+.container{
+    min-height: 320px;
+    max-width: 1200px;
+}
+.header{
+    margin-top: 3rem;
+    font-size: 22px;
+}
+.header h1{
+    margin-right: 5rem;
+}
+.main{
+    margin-top: 4rem;
+}
+.car-res{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: white;
+    min-width: 320px;
+    max-width: 1200px;
+}
+.buttom-navegator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+} 
+.buttom-navegator a{
+    margin: auto;
+    text-decoration: none;
+    border-left: 2px solid rebeccapurple;
+    border-right: 2px solid rebeccapurple;
+    color: rebeccapurple;
+    font-size: 23px;
+}
+.line-navegator{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.line-navegator img{
+    width: 19px;
+    height: 20px;
+}

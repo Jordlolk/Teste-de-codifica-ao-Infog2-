@@ -1,0 +1,90 @@
+.header{
+    background-color: white;
+    margin-top: -20px;
+}
+
+.arrow{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.arrow img{
+    height: 20px;
+    margin-top: 40px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: -20px;
+}
+.image img{ 
+    margin-top: 42px;
+    width: 17rem;
+    height: 230px;
+}
+.main h1{
+    margin: auto;
+    margin-top: 20px;
+    font-size: 32px;
+}
+.details{
+    margin: auto;
+}
+.list-details{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.back{
+    padding: 14px 17px 12px 14px;
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    height: 22px;
+    margin-right: 20px;
+}
+.item-details{
+    list-style: none;
+}
+
+.list-details a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.025rem;
+}
+.border-top{
+    border-top: 4px solid;
+    border-color: rgb(185, 181, 181);
+}
+.description-text{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.0075em;
+    justify-content: center;
+}
+footer{
+    bottom: 20px;
+}
+.buttom{
+    margin: auto;
+    background-color: red;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttom-buy{
+   margin-right: 1rem;
+}
+.buttom-buy a{
+    font-size: 22px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.buttom-details{
+    padding-left: 20px;
+}
