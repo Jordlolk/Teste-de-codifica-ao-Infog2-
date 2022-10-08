@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
-    <link rel="stylesheet" href="public/assets/global.css">
-    <link rel="stylesheet" href="public/assets/details.css">
-    <link rel="stylesheet" href="public/assets/question.css">
+    <link rel="stylesheet" href="/public/assets/css/global.css">
+    <link rel="stylesheet" href="/public/assets/css/details.css">
  
 </head>
 <body>
-    <header class="header">      
+    <div class="container">
+        <header class="header">      
         <div class="arrow">
-                <img  src="public/seta2.png" alt="Voltar"> 
+                <a href="#bottom">
+                    <img  src="/public/img/seta2.png" alt="Voltar"> 
+                </a>
                 <div class="image">
-                    <img src="public/cafe.png" alt="Cafeteria">
+                    <img src="/public/img/cafe.png" alt="Cafeteria">
                     <h1></h1>
                 </div>
         </div>
@@ -24,7 +26,7 @@
         <h1>Cafeteria Italiana</h1>
         <div class="details">
             <p>Opções</p>
-            <div class="details-option">
+            <div>
                 <ul class="list-details">
                     <div class="back">
                         <li class="item-details">
@@ -40,10 +42,10 @@
                         <li class="item-details">
                             <a href="">Preta</a>
                         </li>
-                    </div>
-                </ul>
+                    </ul>
             </div>
-            <p class="border-top"></p>
+    </div>
+    <p class="border-top"></p>
             <div>
                 <h4>Descrição</h4>
                 <div class="description-text">
@@ -53,22 +55,19 @@
                     </div>
                 <p class="border-top"></p>
             </div>
-            <div class="question">
-                <h3>Você quer adicionar alguma observação?</h3>
-                <input type="text" name="" id="question" placeholder="Digite aqui..."/>
-
-            </div>
+        </main>
+        <footer>
             <div class="buttom">
                 <div class="buttom-buy">
-                    <a href="">Comprar</a>
+                        <a href="">Comprar</a>
+                    </div>
+                    <div class="buttom-details">
+                        <h2>R$ 89,90</h2>
+                        <p>Ou até 3x de 29,97 sem juros</p>
+                    </div>
                 </div>
-                <div class="buttom-details">
-                    <h2>R$ 89,90</h2>
-                    <p>Ou até 3x de 29,97 sem juros</p>
-                </div>
-            </div>
-                
-    </main>
+            </footer>
+    </div>
     
 </body>
 </html>
