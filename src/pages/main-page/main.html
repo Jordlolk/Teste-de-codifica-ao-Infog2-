@@ -24,66 +24,72 @@
             <h2>Cafés especiais</h2>
         <div class="products">
             <ul class="products-list">
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe.png" alt="Café">
-                    </a>
-                    <figure class="figure">Café especial torrado Fazenda - 250g</figure>
-                    <figure class="figure">R$ 29,80</figure>
-                </li>
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe2.png" alt="Café">
-                    </a>
-                    <figure class="figure">Café especial torrado Fazenda - 220g</figure>
-                    <figure class="figure">R$ 29,80</figure>
-                </li>
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe.png" alt="Café">
-                    </a>
-                    <figure class="figure">Café especial torrado Fazenda - 210g</figure>
-                    <figure class="figure">R$ 29,80</figure>
-                </li>
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe2.png" alt="Café">
-                    </a>
-                    <figure class="figure">Café especial torrado Fazenda - 150g</figure>
-                    <figure class="figure">R$ 29,80</figure>
-                </li>
+                <script>
+                    function generateElements(html) {
+                        const template = document.createElement('template');
+                        template.innerHTML = html.trim();
+                        return template.content.children[0];
+                    }
+                    
+                    fetch("http://159.89.176.78:8001/categorias/lu_estilo/")
+                            .then(function (res) {
+                              return res.json();
+                        })
+                            .then(function (data) {
+                              let products = data;
+                            
+                              products[0].products.map((product) => {
+                                const elm = generateElements(`
+                                    <li class="products-item">
+                                        <a href="/src/pages/items/itemdetails.html?id=${product.id}">
+                                            <img src="${product.images[0].image}" alt="Café">
+                                        </a>
+                                        <figure class="figure">${product.description}</figure>
+                                        <figure class="figure">${product.stocks[0].unit_price}</figure>
+                                    </li>
+                                `);
+                               
+                                document.querySelector(".products-list").append(elm);
+                            })
+                            
+                        });
+                    
+                </script>
             </ul>
         </div>
+        <h2>Cafés especiais</h2>
         <div class="products">
-            <ul class="products-list">
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe.png" alt="Café">
-                    </a>
-                    <figure>Café especial torrado Fazenda - 150g</figure>
-                    <figure>R$ 29,80</figure>
-                </li>
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe2.png" alt="Café">
-                    </a>
-                    <figure>Café especial torrado Fazenda - 150g</figure>
-                    <figure>R$ 29,80</figure>
-                </li>
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe.png" alt="Café">
-                    </a>
-                    <figure>Café especial torrado Fazenda - 150g</figure>
-                    <figure>R$ 29,80</figure>
-                </li>
-                <li class="products-item">
-                    <a href="/src/pages/items/itemdetails.html">
-                        <img src="/public/img/cafe2.png" alt="Café">
-                    </a>
-                    <figure>Café especial torrado Fazenda - 150g</figure>
-                    <figure>R$ 29,80</figure>
-                </li>
+            <ul class="products-list2">
+                <script>
+                    function generateElements(html) {
+                        const template = document.createElement('template');
+                        template.innerHTML = html.trim();
+                        return template.content.children[0];
+                    }
+                    
+                    fetch("http://159.89.176.78:8001/categorias/lu_estilo/")
+                            .then(function (res) {
+                              return res.json();
+                        })
+                            .then(function (data) {
+                              let products = data;
+                            
+                              products[1].products.map((product) => {
+                                const elm = generateElements(`
+                                    <li class="products-item">
+                                        <a href="/src/pages/items/itemdetails.html">
+                                            <img src="${product.images[0].image}" alt="Café">
+                                        </a>
+                                        <figure class="figure">${product.description}</figure>
+                                        <figure class="figure">${product.stocks[0].unit_price}</figure>
+                                    </li>
+                                `);
+                               
+                                document.querySelector(".products-list2").append(elm);
+                            })
+                        });
+                    
+                </script>
             </ul>
         </div>
     </main>

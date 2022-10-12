@@ -47,14 +47,34 @@ html, body {
     align-items: center;
     overflow-x: scroll;
     list-style: none;
+    gap: 30px;
+}
+.products-list2{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    list-style: none;
+    gap: 30px;
 }
 .products-list img{
-    min-width: 14rem;
-    max-width: 18rem;
-    min-height: 14rem;
-    max-height: 18rem;
-    margin-left: 20px;
+    height: 300px;
+    width: 300px;
     border-radius: 10px;
+    
+}
+.products-list2 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.products-item{
+    height: fit-content;
+   
+}
+.products-item2{
+    height: fit-content;
 }
 .figure{
     font-size: 1.6rem;
