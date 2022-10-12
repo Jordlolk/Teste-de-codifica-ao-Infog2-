@@ -1,4 +1,3 @@
 # Teste-de-codifica-ao-Infog2-
 >>NO PROJETO ALTEREI:TAMANHO DOS ELEMENTOS, E CORES.
->>INFELIZMENTE NÃO CONSEGUI APLICAR O JS NO SITE.
->>LINK DO PROJETO:
+>>LINK DO PROJETO: https://jordlolk.github.io/Teste-de-codifica-ao-Infog2-/
